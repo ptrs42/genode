@@ -21,6 +21,7 @@ CUSTOM_NM      ?= $(CROSS_DEV_PREFIX)nm
 CUSTOM_OBJCOPY ?= $(CROSS_DEV_PREFIX)objcopy
 CUSTOM_RANLIB  ?= $(CROSS_DEV_PREFIX)ranlib
 CUSTOM_STRIP   ?= $(CROSS_DEV_PREFIX)strip
+CUSTOM_HOST_CC ?= gcc
 
 #
 # GNU utilities
@@ -36,15 +37,16 @@ ECHO      ?= echo -e
 #
 # Build tools
 #
-CC      = $(CUSTOM_CC)
-CXX     = $(CUSTOM_CXX)
-LD      = $(CUSTOM_LD)
-AS      = $(CUSTOM_AS)
-AR      = $(CUSTOM_AR)
-NM      = $(CUSTOM_NM)
-OBJCOPY = $(CUSTOM_OBJCOPY)
-RANLIB  = $(CUSTOM_RANLIB)
-STRIP   = $(CUSTOM_STRIP)
+CC      := $(CUSTOM_CC)
+CXX     := $(CUSTOM_CXX)
+LD      := $(CUSTOM_LD)
+AS      := $(CUSTOM_AS)
+AR      := $(CUSTOM_AR)
+NM      := $(CUSTOM_NM)
+OBJCOPY := $(CUSTOM_OBJCOPY)
+RANLIB  := $(CUSTOM_RANLIB)
+STRIP   := $(CUSTOM_STRIP)
+HOST_CC := $(CUSTOM_HOST_CC)
 
 #
 # Compiler and Linker options
