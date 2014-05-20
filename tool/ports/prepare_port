@@ -52,7 +52,7 @@ HASH      := $(if $(HASH_FILE),$(shell cat $(HASH_FILE)),)
 _REL_HASH_FILE := $(notdir $(REP_DIR))/ports/$(notdir $(PORT))
 
 # directory where to install the port
-PORT_DIR := $(CONTRIB_DIR)/$(HASH)-$(PORT_NAME)
+PORT_DIR := $(CONTRIB_DIR)/$(PORT_NAME)-$(HASH)
 
 # path to hash file generated during installation
 PORT_HASH_FILE := $(PORT_DIR)/$(PORT_NAME).hash
