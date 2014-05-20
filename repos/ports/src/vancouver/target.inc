@@ -1,9 +1,9 @@
 TARGET = vancouver
 
-CONTRIB_DIR = $(REP_DIR)/contrib/seoul-git
-VANCOUVER_DIR = $(CONTRIB_DIR)
-GENODE_DIR = $(CONTRIB_DIR)/genode
-NOVA_INCLUDE_DIR = $(REP_DIR)/contrib/seoul-git/include
+SEOUL_CONTRIB_DIR = $(REP_DIR)/contrib/seoul-git
+VANCOUVER_DIR     = $(SEOUL_CONTRIB_DIR)
+GENODE_DIR        = $(SEOUL_CONTRIB_DIR)/genode
+NOVA_INCLUDE_DIR  = $(REP_DIR)/contrib/seoul-git/include
 
 REQUIRES += nova
 
@@ -40,6 +40,6 @@ CC_CXX_OPT += -march=core2
 CC_CXX_OPT += -mssse3
 
 vpath %.cc $(VANCOUVER_DIR)
-vpath %.cc $(CONTRIB_DIR)
+vpath %.cc $(SEOUL_CONTRIB_DIR)
 vpath %.cc $(PRG_DIR)/..
 vpath %.tff $(PRG_DIR)/..
