@@ -225,7 +225,7 @@ _file_name = $(call _prefer,$(NAME($1)),$(notdir $(URL($1))))
 		(test -f $$name || $(MSG_DOWNLOAD)$(URL($*))); \
 		(test -f $$name || wget --quiet $(URL($*)) -O $$name);
 	$(VERBOSE)\
-		($(ECHO) "$(SHA($*)) $(call _file_name,$*)" |\
+		($(ECHO) "$(SHA($*))  $(call _file_name,$*)" |\
 		$(HASHSUM) -c > /dev/null 2> /dev/null) || \
 			($(ECHO) Error: Hash sum check for $* failed; false)
 
