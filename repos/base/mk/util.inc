@@ -39,7 +39,7 @@ endef
 _lookup_port_hash_file  = $(wildcard $(addsuffix /ports/$1.hash,$(REPOSITORIES)))
 _capture_port_hash_file = $(call _capture,$(call _lookup_port_hash_file,$1),PORT_HASH_FILES)
 _hash_of_port           = $(shell echo | cat $(call _capture_port_hash_file,$1))
-_port_dir               = $(wildcard $(CONTRIB_DIR)/$(call _hash_of_port,$1)-$1)
+_port_dir               = $(wildcard $(CONTRIB_DIR)/$1-$(call _hash_of_port,$1))
 _checked_port_dir       = $(call _assert,$(call _port_dir,$1),$1 is not prepared or outdated)
 
 select_from_ports = $(call _checked_port_dir,$1)
