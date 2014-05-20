@@ -222,5 +222,5 @@ buildinf.h:
 	echo "  #define PLATFORM \"FreeBSD-$(TARGET_CPUARCH)\""; \
 	echo "#endif" ) > $@
 
-vpath %.s $(REP_DIR)/src/lib/openssl/$(TARGET_CPUARCH)
+vpath %.s $(call select_from_ports,openssl)/src/lib/openssl/$(TARGET_CPUARCH)
 vpath %.c $(LIBCRYPTO_DIR)
