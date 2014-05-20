@@ -10,6 +10,6 @@ SRC_S  += $(filter-out $(FILTER_OUT_S),$(notdir $(wildcard $(LIBC_GEN_ARM_DIR)/*
 SRC_C  += $(filter-out $(FILTER_OUT_C),$(notdir $(wildcard $(LIBC_GEN_ARM_DIR)/*.c)))
 
 # fix missing include prefix for 'ucontext.h', should be 'sys/ucontext.h'
-CC_OPT_makecontext = -I$(REP_DIR)/include/libc/sys
+CC_OPT_makecontext = -I$(call select_from_ports,libc)/include/libc/sys
 
 vpath % $(LIBC_GEN_ARM_DIR)
