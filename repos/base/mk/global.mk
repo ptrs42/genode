@@ -37,16 +37,16 @@ ECHO      ?= echo -e
 #
 # Build tools
 #
-CC      := $(CUSTOM_CC)
-CXX     := $(CUSTOM_CXX)
-LD      := $(CUSTOM_LD)
-AS      := $(CUSTOM_AS)
-AR      := $(CUSTOM_AR)
-NM      := $(CUSTOM_NM)
-OBJCOPY := $(CUSTOM_OBJCOPY)
-RANLIB  := $(CUSTOM_RANLIB)
-STRIP   := $(CUSTOM_STRIP)
-HOST_CC := $(CUSTOM_HOST_CC)
+CC      = $(CUSTOM_CC)
+CXX     = $(CUSTOM_CXX)
+LD      = $(CUSTOM_LD)
+AS      = $(CUSTOM_AS)
+AR      = $(CUSTOM_AR)
+NM      = $(CUSTOM_NM)
+OBJCOPY = $(CUSTOM_OBJCOPY)
+RANLIB  = $(CUSTOM_RANLIB)
+STRIP   = $(CUSTOM_STRIP)
+HOST_CC = $(CUSTOM_HOST_CC)
 
 #
 # Compiler and Linker options
