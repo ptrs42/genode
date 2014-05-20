@@ -2,7 +2,7 @@ LICENSE   := OpenSSL
 VERSION   := 1.0.1g
 DOWNLOADS := openssl.archive
 
-URL(openssl) := https://www.openssl.org/source/openssl-$(VERSION).tar.gz
+URL(openssl) := http://www.openssl.org/source/openssl-$(VERSION).tar.gz
 SHA(openssl) := b28b3bcb1dc3ee7b55024c9f795be60eb3183e3c
 SIG(openssl) := ${URL(openssl)}.asc
 KEY(openssl) := "49A563D9 26BB437D F295C759 9C58A66D 2118CF83 F709453B 5A6A9B85"
