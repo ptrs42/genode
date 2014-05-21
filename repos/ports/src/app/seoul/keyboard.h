@@ -21,13 +21,14 @@
 #ifndef _KEYBOARD_H_
 #define _KEYBOARD_H_
 
-/* local includes */
-#include <synced_motherboard.h>
 
 /* includes for I/O */
 #include <base/env.h>
 #include <input/event.h>
 #include <input/keycodes.h>
+
+/* local includes */
+#include "synced_motherboard.h"
 
 class Vancouver_keyboard
 {

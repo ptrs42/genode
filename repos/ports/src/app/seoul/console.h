@@ -23,14 +23,13 @@
 
 /* Genode includes */
 #include <util/string.h>
-#include <base/sleep.h>
 #include <framebuffer_session/connection.h>
 #include <input_session/connection.h>
 #include <timer_session/connection.h>
 #include <dataspace/client.h>
 
 /* local includes */
-#include <synced_motherboard.h>
+#include "synced_motherboard.h"
 
 /* includes for I/O */
 #include <base/env.h>

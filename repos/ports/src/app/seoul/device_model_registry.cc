@@ -20,7 +20,7 @@
  */
 
 /* local includes */
-#include <device_model_registry.h>
+#include "device_model_registry.h"
 
 
 Device_model_registry *device_model_registry()

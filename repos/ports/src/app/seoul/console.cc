@@ -19,10 +19,6 @@
  * conditions of the GNU General Public License version 2.
  */
 
-/* local includes */
-#include <console.h>
-#include <keyboard.h>
-
 /* Genode includes */
 #include <base/snprintf.h>
 #include <util/register.h>
@@ -30,6 +26,12 @@
 /* nitpicker graphics backend */
 #include <os/pixel_rgb565.h>
 #include <nitpicker_gfx/text_painter.h>
+
+#include <nul/motherboard.h>
+
+/* local includes */
+#include "console.h"
+#include "keyboard.h"
 
 using Genode::env;
 using Genode::Dataspace_client;

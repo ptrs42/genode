@@ -19,7 +19,7 @@
  */
 
 /* local includes */
-#include <network.h>
+#include "network.h"
 
 extern const void * _forward_pkt;
 

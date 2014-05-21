@@ -62,12 +62,12 @@
 #include <sys/hip.h>
 
 /* local includes */
-#include <synced_motherboard.h>
-#include <device_model_registry.h>
-#include <boot_module_provider.h>
-#include <console.h>
-#include <network.h>
-#include <disk.h>
+#include "synced_motherboard.h"
+#include "device_model_registry.h"
+#include "boot_module_provider.h"
+#include "console.h"
+#include "network.h"
+#include "disk.h"
 
 
 enum { verbose_debug = false };

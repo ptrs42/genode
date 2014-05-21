@@ -33,7 +33,7 @@
 #include <vmm/utcb_guard.h>
 
 /* local includes */
-#include <disk.h>
+#include "disk.h"
 
 /* Seoul includes */
 #include <host/dma.h>

@@ -25,7 +25,7 @@
 #include <nic_session/connection.h>
 
 /* local includes */
-#include <synced_motherboard.h>
+#include "synced_motherboard.h"
 
 using Genode::List;
 using Genode::Thread;

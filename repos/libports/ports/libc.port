@@ -11,13 +11,14 @@ $(call check_tool,rpcgen)
 
 svn_exports := libc libutil include sys_sys sys_netinet \
                sys_netinet6 sys_net sys_bsm sys_rpc sys_vm \
-               sys_arm sys_i386 sys_amd64 msun gdtoa
+               sys_arm sys_i386 sys_amd64 msun gdtoa gen
 
 DOWNLOADS := $(addsuffix .svn,$(svn_exports))
 
 svn_base_url := http://svn.freebsd.org/base/release/8.2.0
 
 sub_dir(libc)         := lib/libc
+sub_dir(gen)          := lib/libc/gen
 sub_dir(libutil)      := lib/libutil
 sub_dir(include)      := include
 sub_dir(sys_sys)      := sys/sys
@@ -231,4 +232,3 @@ generated_files += \
 # generate files before assembling the public include directory tree
 _dirs: $(generated_files)
 $(generated_files) : $(DOWNLOADS)
-

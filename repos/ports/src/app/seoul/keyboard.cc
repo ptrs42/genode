@@ -19,7 +19,7 @@
  */
 
 /* local includes */
-#include <keyboard.h>
+#include "keyboard.h"
 
 /* vancouver generic keyboard helper */
 #include <host/keyboard.h>

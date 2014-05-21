@@ -25,14 +25,13 @@
 /* Genode includes */
 #include <base/allocator_avl.h>
 #include <base/printf.h>
-#include <base/sleep.h>
 #include <base/thread.h>
 #include <block_session/connection.h>
 #include <util/string.h>
 #include <base/sync_allocator.h>
 
 /* local includes */
-#include <synced_motherboard.h>
+#include "synced_motherboard.h"
 
 class Vancouver_disk;
 
