@@ -62,5 +62,4 @@ endif
 
 vpath %.c   $(REP_DIR)/src/lib/gmp/mpn/64bit
 vpath %.c   $(GMP_MPN_DIR)/generic
-vpath %.asm $(REP_DIR)/src/lib/gmp/mpn/x86_64
 vpath %.asm $(GMP_MPN_DIR)/x86_64
