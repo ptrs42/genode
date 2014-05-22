@@ -10,7 +10,7 @@ SIG(libav) := ${URL(libav)}.asc
 PATCHES := src/app/avplay/avplay.patch
 
 include_subdirs := . libavcodec libavfilter libavutil libavformat libswscale \
-                   libavutil/x86
+                   libavutil/x86 libavutil/arm libavcodec/x86 libavcodec/arm
 
 DIRS := $(addprefix include/libav/,$(include_subdirs))
 
