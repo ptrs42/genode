@@ -17,7 +17,7 @@ prepare:
 
 help::
 	$(ECHO)
-	$(ECHO) "Prepare the dde_linux repository"
+	$(ECHO) "Prepare the dde_ipxe repository"
 	$(ECHO)
 	$(ECHO) "--- available commands ---"
 	$(ECHO) "prepare - checkout upstream source codes"
